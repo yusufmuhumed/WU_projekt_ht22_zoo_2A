@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#grid_wrapper{
+    display:grid;
+    height:100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "he he"
+    "ma ma"
+    "fo fo";
+}
+
+header{
+    grid-area: he;
+    background: green;
+    display: flex;
+    align-content: center;
+  
+   
+}
+
+
+main{
+    grid-area: ma;
+    background: blue;
+}
+
+footer{
+    grid-area: fo;
+    background: yellow;
+}
