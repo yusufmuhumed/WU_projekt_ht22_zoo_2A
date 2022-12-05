@@ -8,9 +8,9 @@
 
 #grid_wrapper{
     display:grid;
-    height:100vh;
+    height:150vh;
     grid-template-columns: auto;
-    grid-template-rows:  100px minmax(500px, 1fr) 100px;
+    grid-template-rows:   100px 500px 110px; 
     grid-template-areas: 
     "he he"
     "ma ma"
@@ -31,12 +31,42 @@ header{
 
 main{
     grid-area: ma;
-    background: blue;
+    display: flex;
+
+    background: url(../img/animals/startmenu.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 16fr;
+   
+   
+
+}
+#section_djur{
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.section_djur{
+    width: 150px;
+    height: 210px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+#lizard_article{
+    background: url(../img/animals/lizard.jpeg);
+    background-size: contain;
+}
 footer{
     grid-area: fo;
-    background: yellow;
+    background: rgb(53, 53, 49);
     display: flex;
     justify-content: space-around;
     align-items: flex-start ;
@@ -45,6 +75,19 @@ footer{
 }
 
 
-h2 {
-    gap: 40px;
+h3 {
+    font-size: 30px;
+    gap: 20px;
+    
+    
+}
+
+a{
+    color: bisque;
+    text-decoration: double;
+}
+
+a:hover{
+    color: black;
+
 }
