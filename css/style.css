@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
     
 }
 
@@ -17,6 +18,7 @@
     "ma ma"
     "ma ma"
     "fo fo";
+    overflow: hidden;
 }
 
 header{
@@ -28,6 +30,10 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 999;
+   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
    
 }
 
@@ -35,6 +41,8 @@ header{
 main{
     grid-area: ma;
     display: flex;
+    background: url(../img/animals/startmenu.jpg);
+    background-size: 100%;
     
 }
 
@@ -73,6 +81,7 @@ footer{
     align-items: center;
     flex-direction: column;
     word-wrap: break-word;
+    flex-wrap: wrap;
 
        
     
@@ -83,6 +92,7 @@ footer{
     height: 100%;
     border: 1px solid rgb(66, 66, 50);
     border-radius: 4px;
+    overflow: hidden;
     
   
 }
@@ -90,14 +100,20 @@ footer{
 h3 {
     font-size: 50px;
     gap: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(63, 63, 57);
+    
+    
     
     
 }
 
-h4{
+h5{
     
     font-size: 20px;
     gap: 20px;
+    font-family: 'Fredoka One', cursive;
+    
 }
 
 a{
@@ -111,8 +127,9 @@ a:hover{
 }
 
 
-p{
- font: size 12px;
+#textfooter{
+ font-size: 12px;
+ 
 }
 
 .container{
@@ -142,9 +159,9 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 35px;
-    
+    border-radius: 20%;
     background: rgb(91, 113, 19);
-    border-radius: 10%;
+   
     
     
 
@@ -156,10 +173,51 @@ h1{
 }
 
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
-    
-  }
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.öppetider{
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    border-radius: 20%;
+   
+}
+
+.dagar{
+
+   
+    color: rgb(26, 26, 35);
+}
+
+#månfre{
+    position: absolute;
+    top: 101%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    border-radius: 20%;
+}
+
+
+#lör{
+    position: absolute;
+    top: 103%;
+    left: 49.25%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    border-radius: 20%;
+}
+
+#sön{
+    position: absolute;
+    top: 105%;
+    left: 49.25%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    border-radius: 20%;
+}
 
