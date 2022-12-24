@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
     font-family: 'Fredoka One', cursive;
     
@@ -12,7 +13,7 @@
     display:grid;
     height:150vh;
     grid-template-columns: auto;
-    grid-template-rows:   100px 500px 300px ; 
+    grid-template-rows:  100px 500px 300px ; 
     grid-template-areas: 
     "he he"
     "ma ma"
@@ -23,16 +24,18 @@
 
 #grid_wrapper2{
     display:grid;
-    height:150vh;
-    grid-template-columns: minmax(500px,1fr) minmax(500px,1fr);
-    grid-template-rows: 100px minmax(700px, 1fr); 
+    height:200vh;
+    grid-template-columns:  400px minmax(400px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: 100px 300px 300px ;
     grid-template-areas: 
     "he he he"
-    "ar ma ma"
-    "ar ma ma"
-    "ma ar ar"
-    "ma ar ar"
-    "fo fo fo"
+    "ma2 ma2 ar1"
+    "ma2 ma2 ar1"
+    "se se se"
+    "ar2 ar2 ar2"
+    "ar2 ar2 ar2"
+    "fo fo fo";
+
     ;
     overflow: hidden;
 }
@@ -41,7 +44,7 @@ header{
     position: fixed;
     width: 100%;
     height: 100px;
-    max-width: 1920px;
+    max-width: 100%;
     min-width: none;
     margin: 0 auto;
     grid-area: he;
@@ -50,24 +53,39 @@ header{
     justify-content: space-around;
     align-items: center;
     z-index: 999;
-   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     
    
 }
 
 
-main{
+#main1{
     grid-area: ma;
     display: flex;
     background: url(../img/animals/startmenu.jpg);
     background-size: 100%;
+    background-position: fixed;
    
     
 }
 
+#main2{
+    grid-area: ma2;
+    background: url(../img/animals/om-oss1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+  
+}
 
+#section{
+    grid-area: se;
+    height: 100px;
+    background: rgb(208, 203, 203);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
 
 
 
@@ -101,13 +119,44 @@ footer{
     align-items: center;
     flex-direction: column;
     word-wrap: break-word;
-   
-    z-index: 0;
+    width: 100%;
+    max-height: max-content;
+    max-width: 100%;
+    min-width: none;
+    margin: 0 auto;
+    z-index: 1;
 
        
     
 }
 
+#article1{
+    grid-area:ar1 ;
+    display: flex;
+    justify-content:flex-start;
+    align-content:flex-start;  
+    align-items: center;
+    flex-direction: row;
+    
+    width: 100%;
+}
+
+#article2{
+    grid-area: ar2;
+    height: 300px;
+
+}
+
+
+#article_rubrik{
+    font-size: 30px;
+    padding: 10px;
+    order: 1;
+}
+
+#text_om_oss{
+    order: 2;
+}
 #startmenu{
     width: 100%;
     height: 100%;
@@ -155,7 +204,7 @@ a:hover{
 
 
 
-.center {
+.rubrik {
     position: absolute;
     top: 28%;
     left: 50%;
@@ -170,7 +219,7 @@ a:hover{
   
 
 .text{
-    position: absolute;
+    position:absolute;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -252,11 +301,25 @@ p{
     transform: translate(-50%, -50%);
     border-radius: 20%;
 }
-
+ 
 
 .footericons{
     fill : rgb(34, 32, 32);
     width: 10px;
-    mi
 
+
+}
+
+#section{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card_img{
+    height: 10p;
+}
+
+.cards{
+ background: purple;
 }
