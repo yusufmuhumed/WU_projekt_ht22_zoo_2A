@@ -311,17 +311,43 @@ p{
 
 }
 
-#section{
+#article2{
     display: flex;
     justify-content: center;
+   margin-top: 10px;
+    
+    gap: 300px;
     
 }
 
+#personbild1{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+#personbild2{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 15px;
+
+}
+#personbild3{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 15px;
+
+}
 .card_img{
-    max-height: 20% ;
-    width: 20%;
+   height: 50px;
+   width: 70px;
 }
 
 .cards{
- background: purple;
+
+    border: 3px solid black;
+    border-radius: 20px;
+
+ height: 200px;
+ width: 153px;
 }
