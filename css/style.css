@@ -65,7 +65,7 @@ header{
     display: flex;
     background: url(../img/animals/startmenu.jpg);
     background-size: 100%;
-    background-position: fixed;
+    
    
     
 }
@@ -120,7 +120,7 @@ footer{
     flex-direction: column;
     word-wrap: break-word;
     width: 100%;
-    max-height: max-content;
+    max-height: fit-content;
     max-width: 100%;
     min-width: none;
     margin: 0 auto;
@@ -148,7 +148,7 @@ footer{
 }
 
 
-#article_rubrik{
+#article_rubrik1{
     font-size: 20px;
     padding: 10px;
     order: 1;
@@ -156,6 +156,19 @@ footer{
 
 #text_om_oss{
     order: 2;
+    padding-left: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#rubrik2_om_oss{
+    order: 3;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#text2_om_oss{
+    order: 4;
     padding-left: 10px;
 }
 #startmenu{
@@ -263,7 +276,7 @@ p{
 
 .öppetider{
     position: absolute;
-    top: 102%;
+    top: 107%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 22px;
@@ -280,7 +293,7 @@ p{
 
 #månfre{
     position: absolute;
-    top: 105%;
+    top: 110%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -290,7 +303,7 @@ p{
 
 #lör{
     position: absolute;
-    top: 107%;
+    top: 112%;
     left: 49.25%;
     transform: translate(-50%, -50%);
     border-radius: 20%;
@@ -298,13 +311,15 @@ p{
 
 #sön{
     position: absolute;
-    top: 109%;
+    top: 114%;
     left: 49.25%;
     transform: translate(-50%, -50%);
     border-radius: 20%;
 }
  
-
+#öppetiderbackground{
+    background-color: rgb(52, 20, 20);
+}
 .footericons{
     fill : rgb(34, 32, 32);
     width: 10px;
@@ -316,9 +331,7 @@ p{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
-    gap: 300px;
-    
+    gap: 300px; 
 }
 
 #personbild1{
@@ -354,6 +367,9 @@ p{
     background: rgb(34, 32, 32);
     flex-direction: row;
     flex-wrap: wrap;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+
 }
 
 #namn2{
