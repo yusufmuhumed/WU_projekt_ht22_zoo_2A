@@ -31,7 +31,7 @@
     "he he he"
     "ma2 ma2 ar1"
     "ma2 ma2 ar1"
-    "se se se"
+    "se1 se1 se1"
     "ar2 ar2 ar2"
     "ar2 ar2 ar2"
     "fo fo fo";
@@ -40,6 +40,18 @@
     overflow: hidden;
 }
 
+#grid_wrapper3{
+    display:grid;
+    height:350vh;
+    grid-template-columns: auto;
+    grid-template-rows:  100px 2000px 300px ; 
+    grid-template-areas: 
+    "he he"
+    "se2 se2"
+    "se2 se2"
+    "fo fo";
+    overflow: hidden;
+}
 header{
     position: fixed;
     width: 100%;
@@ -79,14 +91,25 @@ header{
   
 }
 
-#section{
-    grid-area: se;
+#section1{
+    grid-area: se1;
     height: 100px;
     background: rgb(208, 203, 203);
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
+#section2{
+    grid-area: se2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+    gap: 300px; 
+}
 
 
 #section_djur{
@@ -107,10 +130,7 @@ header{
 
 
 }
-#lizard_article{
-    background: url(../img/animals/lizard.jpeg);
-    background-size: contain;
-}
+
 footer{
     grid-area: fo;
     background: rgb(34, 32, 32);
@@ -144,6 +164,12 @@ footer{
 #article2{
     grid-area: ar2;
     height: 300px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-top: 20px;
+    gap: 300px; 
 
 }
 
@@ -158,6 +184,7 @@ footer{
     order: 2;
     padding-left: 10px;
     font-family:'Times New Roman', Times, serif;
+    font-stretch: ultra-expanded;
 }
 
 #rubrik2_om_oss{
@@ -327,12 +354,7 @@ p{
 
 }
 
-#article2{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 300px; 
-}
+
 
 #personbild1{
     width: 150px;
@@ -352,12 +374,17 @@ p{
     border-radius: 15px;
 
 }
-.card_img{
+.card_img1{
    height: 50px;
    width: 70px;
 }
 
-.cards{
+.card_img2{
+    height: 150px;
+    width: 350px;
+ }
+
+.cards1{
 
     border: 3px solid black;
     border-radius: 20px;
@@ -368,6 +395,25 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.cards2{
+
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 550px;
+    width: 353px;
+    display: flex;
+    background: url(../img/animals/flamingo.jpeg);
+    background-repeat: no-repeat;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+    margin-right: 100px;
+    
 
 
 }
@@ -393,4 +439,10 @@ p{
 .cardinfo{
     margin-left: 5px;
     color: white ;
+}
+
+.djur{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 15px;
 }
