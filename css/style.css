@@ -42,11 +42,12 @@
 
 #grid_wrapper3{
     display:grid;
-    height:350vh;
+    height:250vh;
     grid-template-columns: auto;
-    grid-template-rows:  100px 2000px 300px ; 
+    grid-template-rows:  100px 150px 1000px 300px ; 
     grid-template-areas: 
     "he he"
+    "ar3 ar3"
     "se2 se2"
     "se2 se2"
     "fo fo";
@@ -104,11 +105,12 @@ header{
 #section2{
     grid-area: se2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+   
+    background: rgb(222, 193, 193);
     
-    gap: 300px; 
+    gap: 10px; 
 }
 
 
@@ -166,11 +168,24 @@ footer{
     height: 300px;
     display: flex;
     align-content: space-around;
-    justify-content: space-around;
+    
+    justify-content: center;
+    flex-wrap: wrap; 
     margin-left: 10px;
     margin-top: 20px;
     gap: 300px; 
 
+}
+
+#article3{
+    grid-area: ar3;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; 
+    background: rgb(222, 193, 193);
+    
 }
 
 
@@ -224,9 +239,26 @@ h5{
     font-size: 20px;
     gap: 20px;
     font-family: 'Fredoka One', cursive;
+
     
 }
 
+#rubrik_djur{
+    text-align: center;
+    order:1;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+#text_djur{
+    text-align: center;
+    order: 2;
+    font-stretch: ultra-expanded;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 16px;
+}
 a{
     color: rgb(60, 55, 49);
     text-decoration: double;
@@ -380,8 +412,8 @@ p{
 }
 
 .card_img2{
-    height: 150px;
-    width: 350px;
+    width: 400px;
+    height: 250px;
  }
 
 .cards1{
@@ -402,17 +434,17 @@ p{
 .cards2{
 
     border: 3px solid black;
-    border-radius: 20px;
-    height: 550px;
-    width: 353px;
+    border-radius: 10px;
+    height: 250px;
+    width: 400px;
     display: flex;
     background: url(../img/animals/flamingo.jpeg);
     background-repeat: no-repeat;
     flex-direction: row;
     flex-wrap: wrap;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
     
 
 
@@ -422,18 +454,18 @@ p{
     
     
     position: absolute;
-    top: 135%;
+    top: 140%;
 }
 
 #telefonnummer{
     position: absolute;
-    top: 138%;
+    top: 142%;
     
 }
 
 #yrke{
     position: absolute;
-    top: 141%;
+    top: 144%;
 }
 
 .cardinfo{
