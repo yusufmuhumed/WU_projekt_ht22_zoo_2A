@@ -108,7 +108,7 @@ header{
     justify-content: center;
     flex-wrap: wrap;
    
-    background: rgb(222, 193, 193);
+    
     
     gap: 10px; 
 }
@@ -119,19 +119,7 @@ header{
     flex-wrap: wrap;
 }
 
-.section_djur{
-    width: 150px;
-    height: 210px;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
 
-
-}
 
 footer{
     grid-area: fo;
@@ -184,7 +172,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap; 
-    background: rgb(222, 193, 193);
+    
     
 }
 
@@ -431,28 +419,37 @@ p{
 
 }
 
+
+
 .cards2{
 
     border: 3px solid black;
     border-radius: 10px;
-    height: 250px;
+    height: 350px;
     width: 400px;
     display: flex;
-    background: url(../img/animals/flamingo.jpeg);
-    background-repeat: no-repeat;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     margin-left: 10px;
     margin-right: 10px;
+    background: #282a2d;
     
 
 
 }
-
+.card_name{
+    display: flex;
+    background: #cacdd2;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
 #namn2{
-    
-    
     position: absolute;
     top: 140%;
 }
@@ -474,7 +471,8 @@ p{
 }
 
 .djur{
-    width: 150px;
+    width: 390px;
+    height: 250px ;
     border: 3px solid black;
     border-radius: 15px;
 }
