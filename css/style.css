@@ -16,8 +16,8 @@
     grid-template-rows:  100px 500px 300px ; 
     grid-template-areas: 
     "he he"
-    "ma ma"
-    "ma ma"
+    "ma1 ma1"
+    "ma1 ma1"
     "fo fo";
     overflow: hidden;
 }
@@ -32,6 +32,7 @@
     "ma2 ma2 ar1"
     "ma2 ma2 ar1"
     "se1 se1 se1"
+    "im im im"
     "ar2 ar2 ar2"
     "ar2 ar2 ar2"
     "fo fo fo";
@@ -74,12 +75,13 @@ header{
 
 
 #main1{
-    grid-area: ma;
+    grid-area: ma1;
     display: flex;
     background: url(../img/animals/startmenu.jpg);
     background-size: 100%;
-    
-   
+    align-content: center;
+   align-items: center;
+   justify-content: center;
     
 }
 
@@ -94,7 +96,7 @@ header{
 
 #section1{
     grid-area: se1;
-    height: 100px;
+    height: 110px;
     background: rgb(208, 203, 203);
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
@@ -153,7 +155,7 @@ footer{
 
 #article2{
     grid-area: ar2;
-    height: 300px;
+    height: 200px;
     display: flex;
     align-content: space-around;
     
@@ -180,16 +182,25 @@ footer{
 #article_rubrik1{
     font-size: 20px;
     padding: 10px;
+    margin-top: 10px;
     order: 1;
 }
 
 #text_om_oss{
     order: 2;
     padding-left: 10px;
-    font-family:'Times New Roman', Times, serif;
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-stretch: ultra-expanded;
 }
 
+#text2_om_oss{
+    order: 4;
+    padding-left: 10px;
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-stretch: ultra-expanded;
+}
 #rubrik2_om_oss{
     order: 3;
     padding: 10px;
@@ -197,10 +208,7 @@ footer{
     font-size: 20px;
 }
 
-#text2_om_oss{
-    order: 4;
-    padding-left: 10px;
-}
+
 #startmenu{
     width: 100%;
     height: 100%;
@@ -215,11 +223,7 @@ h3 {
     font-size: 50px;
     gap: 20px;
     font-family: 'Fredoka One', cursive;
-    color: rgb(0, 0, 0);
-    
-    
-    
-    
+    color: rgb(0, 0, 0);   
 }
 
 h5{
@@ -231,6 +235,21 @@ h5{
     
 }
 
+#intromänniskor{
+    grid-area: im;
+    height: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#rubrikmänniskor{
+    font-size: 25px;
+}
+
+#textmänniskor{
+    font-size: 15px;
+    margin-top: 10px;
+}
 #rubrik_djur{
     text-align: center;
     order:1;
@@ -282,7 +301,7 @@ a:hover{
 .text{
     position:absolute;
     top: 95%;
-    left: 50%;
+    left: 49.75%;
     transform: translate(-50%, -50%);
     font-size: 35px;
     padding: 5px;
@@ -317,10 +336,33 @@ h5{
 
 
 p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.landing_info{
+    width: 600px;
+    height: 165px;
+    background: #cacdd2;
+    border-radius: 10px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
     
 }
 
+#rubrik2{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#text2{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .öppetider{
     position: absolute;
     top: 107%;
@@ -397,6 +439,8 @@ p{
 .card_img1{
    height: 50px;
    width: 70px;
+   margin-left:-1px ;
+   margin-right: -1px; 
 }
 
 .card_img2{
@@ -408,12 +452,13 @@ p{
 
     border: 3px solid black;
     border-radius: 20px;
-    height: 250px;
+    height: 240px;
     width: 153px;
     display: flex;
     background: rgb(34, 32, 32);
     flex-direction: row;
     flex-wrap: wrap;
+    
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 
 
@@ -447,27 +492,32 @@ p{
     height: 50px;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 30px;
+
+    
 }
 #namn2{
     position: absolute;
-    top: 140%;
+    top: 158%;
 }
 
 #telefonnummer{
     position: absolute;
-    top: 142%;
+    top: 160%;
     
 }
 
 #yrke{
     position: absolute;
-    top: 144%;
+    top: 162%;
 }
 
 .cardinfo{
     margin-left: 5px;
     color: white ;
+    
+    
 }
 
 .djur{
